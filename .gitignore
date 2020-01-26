@@ -1,0 +1,9 @@
+# Dependencies
+node_modules
+
+# Builds
+build/
+
+# Dirt
+.DS_Store
+__snapshots__
