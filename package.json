@@ -54,5 +54,9 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@storybook/addon-info": "^5.3.9",
+    "awesome-typescript-loader": "^5.2.1",
+    "react-docgen-typescript-loader": "^3.6.0"
+  }
 }
