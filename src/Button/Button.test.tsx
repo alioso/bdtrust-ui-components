@@ -1,22 +1,22 @@
-import * as React from "react";
-import { shallow } from "enzyme";
+// import * as React from "react";
+// import { shallow } from "enzyme";
 
-import Button from "./Button";
+// import Button from "./Button";
 
-describe("Test Component", () => {
-  let props: any;
+// describe("Test Component", () => {
+//   let props: any;
 
-  beforeEach(() => {
-    props = {
-      theme: "primary"
-    };
-  });
+//   beforeEach(() => {
+//     props = {
+//       theme: "primary"
+//     };
+//   });
 
-  const renderWrapper = () => shallow(<Button {...props} />);
+//   const renderWrapper = () => shallow(<Button {...props} />);
 
-  describe("Snapshots", () => {
-    it("should match snapshots as primary themed", () => {
-      expect(renderWrapper()).toMatchSnapshot();
-    });
-  });
-});
+//   describe("Snapshots", () => {
+//     it("should match snapshots as primary themed", () => {
+//       expect(renderWrapper()).toMatchSnapshot();
+//     });
+//   });
+// });

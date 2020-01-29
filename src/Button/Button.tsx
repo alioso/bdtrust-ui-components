@@ -4,7 +4,7 @@ import * as React from "react";
 export interface Props {
   children: any;
   classes?: string;
-  onClick?: (e: React.MouseEvent<HTMLElement>) => void;
+  onClick?: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
 }
 
 const Button: React.FC<Props> = props => {
