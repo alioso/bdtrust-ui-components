@@ -34,7 +34,7 @@ export default {
     }),
     commonjs({
       include: ["node_modules/**"],
-      exclude: ["**/*.stories.js"],
+      exclude: ["**/*.stories.tsx"],
       namedExports: {
         "node_modules/react/react.js": [
           "Children",
