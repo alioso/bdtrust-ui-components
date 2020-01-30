@@ -47,9 +47,10 @@ export default {
     }),
     postcss({
       extensions: [".css"],
+      minimize: true,
       // plugins: [simplevars, nested, cssnext],
-      extract: true,
-      modules: false // set this option to false
+      extract: false,
+      modules: false
       // ...
     })
   ]

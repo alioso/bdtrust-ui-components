@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import * as React from "react";
 
-import "../../styles/main.css";
+import "./Button.css";
 
 export interface Props {
   children: any;

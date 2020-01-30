@@ -7,6 +7,6 @@ module.exports = {
     postcssPresetEnv({
       browsers: "last 2 versions"
     }),
-    tailwindcss("./styles/tailwind.config.js")
+    tailwindcss("./tailwind.config.js")
   ]
 };
