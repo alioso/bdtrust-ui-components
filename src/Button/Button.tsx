@@ -1,4 +1,3 @@
-import classNames from "classnames";
 import * as React from "react";
 
 import "./Button.css";
@@ -13,15 +12,7 @@ const Button: React.FC<Props> = props => {
   const { children, classes, onClick } = props;
 
   return (
-    <button
-      className={classNames(
-        {
-          ["my-2"]: true
-        },
-        classes
-      )}
-      onClick={onClick}
-    >
+    <button className={`my-2 ${classes}`} onClick={onClick}>
       {children}
     </button>
   );
