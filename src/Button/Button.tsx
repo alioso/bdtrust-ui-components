@@ -1,6 +1,8 @@
 import classNames from "classnames";
 import * as React from "react";
 
+import "../../styles/main.css";
+
 export interface Props {
   children: any;
   classes?: string;
