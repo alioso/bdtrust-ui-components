@@ -5,6 +5,6 @@ export default {
   title: "Button"
 };
 
-export const Primary = () => (
-  <Button onClick={() => alert("Button was clicked!")}>Test Button</Button>
-);
+const onClick = () => alert("Button was clicked!");
+
+export const Primary = () => <Button onClick={onClick}>Test Button</Button>;
