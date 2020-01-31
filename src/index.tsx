@@ -1,5 +1,5 @@
 // Base CSS
-import "./base.css";
+import "./base.pcss";
 
 // Button
 import Button from "./Button";

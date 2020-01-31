@@ -53,6 +53,7 @@
     "rollup-plugin-postcss": "^2.0.5",
     "rollup-plugin-tailwind": "^1.0.0",
     "rollup-plugin-typescript2": "^0.25.3",
+    "stylelint-config-recommended": "^3.0.0",
     "tailwindcss": "^1.1.4",
     "ts-jest": "^25.0.0",
     "typescript": "^3.7.5",
