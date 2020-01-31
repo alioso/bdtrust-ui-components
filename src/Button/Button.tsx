@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import './Button.css';
+import "./Button.css";
 
 export interface Props {
   children: any;
