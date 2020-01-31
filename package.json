@@ -1,6 +1,6 @@
 {
   "name": "@bdtrust-ui/component-library",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Component Library for Benefits Data Trust",
   "author": "Alban Bailly",
   "license": "MIT",
@@ -19,8 +19,8 @@
   },
   "homepage": "https://github.com/alioso/bdtrust-component-library#readme",
   "scripts": {
-    "build": "rm -rf build && rollup -c",
-    "build-storybook": "build-storybook",
+    "build:components": "rm -rf build && rollup -c",
+    "build:storybook": "build-storybook",
     "lint-all": "yarn prettier:check && yarn tslint:check && yarn stylelint:check",
     "prettier": "prettier --write src/**/*.{js,ts,tsx,css}",
     "prettier:check": "prettier --list-different src/**/*.{js,ts,tsx,css}",
