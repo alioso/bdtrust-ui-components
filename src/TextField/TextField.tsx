@@ -13,7 +13,7 @@ const TextField: React.FC<Props> = props => {
   return (
     <>
       <label>{label}</label>
-      <input type="text" className={`popopopopopopopo ${classes}`} />
+      <input type="text" className={"textfield" + (classes || "")} />
     </>
   );
 };

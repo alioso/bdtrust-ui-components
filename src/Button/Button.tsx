@@ -12,7 +12,7 @@ const Button: React.FC<Props> = props => {
   const { children, classes, onClick } = props;
 
   return (
-    <button className={`my-2 ${classes}`} onClick={onClick}>
+    <button className={"my-2" + (classes || "")} onClick={onClick}>
       {children}
     </button>
   );

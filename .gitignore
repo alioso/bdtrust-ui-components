@@ -7,3 +7,9 @@ build/
 # Dirt
 .DS_Store
 __snapshots__
+
+# Logs
+yarn-error.log
+
+# Storybook
+storybook-static
