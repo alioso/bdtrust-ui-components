@@ -1,3 +1,6 @@
+// Base CSS
+import "./base.css";
+
 // Button
 import Button from "./Button";
 export { Button };

@@ -38,8 +38,8 @@ export default {
         "node_modules/react/react.js": [
           "Children",
           "Component",
-          "PropTypes",
-          "createElement"
+          "createElement",
+          "PropTypes"
         ],
         "node_modules/react-dom/index.js": ["render"]
       }
