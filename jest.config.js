@@ -1,6 +1,14 @@
 module.exports = {
+  preset: "ts-jest",
   roots: ["./src"],
-  setupFiles: ["./setupTests.ts"],
+  globals: {
+    "ts-jest": {
+      tsConfig: "tsconfig.json",
+      diagnostics: {
+        ignoreCodes: [151001]
+      }
+    }
+  },
   moduleFileExtensions: ["ts", "tsx", "js"],
   testPathIgnorePatterns: ["node_modules/"],
   transform: {
@@ -13,5 +21,5 @@ module.exports = {
       "identity-obj-proxy",
     "\\.(css|less|scss|sass)$": "identity-obj-proxy"
   },
-  snapshotSerializers: ["enzyme-to-json/serializer"]
+  setupFilesAfterEnv: ["@testing-library/jest-dom/extend-expect"] // setupFiles before the tests are ran
 };

@@ -1,22 +1,11 @@
-// import * as React from "react";
-// import { shallow } from "enzyme";
+import { render } from "@testing-library/react";
+import * as React from "react";
 
-// import Button from "./Button";
+import Button from "./Button";
 
-// describe("Test Component", () => {
-//   let props: any;
-
-//   beforeEach(() => {
-//     props = {
-//       theme: "primary"
-//     };
-//   });
-
-//   const renderWrapper = () => shallow(<Button {...props} />);
-
-//   describe("Snapshots", () => {
-//     it("should match snapshots as primary themed", () => {
-//       expect(renderWrapper()).toMatchSnapshot();
-//     });
-//   });
-// });
+describe("Abuse ticket banner", () => {
+  it("should render a banner for an abuse ticket", () => {
+    const { queryAllByText } = render(<Button>A Button</Button>);
+    expect(queryAllByText(/A Button/)).toHaveLength(1);
+  });
+});

@@ -1,22 +1,11 @@
-// import * as React from "react";
-// import { shallow } from "enzyme";
+import { render } from "@testing-library/react";
+import * as React from "react";
 
-// import Button from "./Button";
+import TextField from "./TextField";
 
-// describe("Test Component", () => {
-//   let props: any;
-
-//   beforeEach(() => {
-//     props = {
-//       theme: "primary"
-//     };
-//   });
-
-//   const renderWrapper = () => shallow(<Button {...props} />);
-
-//   describe("Snapshots", () => {
-//     it("should match snapshots as primary themed", () => {
-//       expect(renderWrapper()).toMatchSnapshot();
-//     });
-//   });
-// });
+describe("Textfield", () => {
+  it("should render a label", () => {
+    const { queryAllByText } = render(<TextField label="Textfield Label" />);
+    expect(queryAllByText(/Textfield Label/)).toHaveLength(1);
+  });
+});
